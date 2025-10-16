@@ -26,7 +26,8 @@ public class AmazonTest {
 
     @Test(dataProvider = "browsers")
     public void testAmazonSearch(String browser) throws Exception {
-        URL gridUrl = new URL("http://localhost:4444/wd/hub"); // Selenium Grid hub URL
+        URL gridUrl = new URL("http://host.docker.internal:4444/wd/hub\r\n"
+        		+ ""); // Selenium Grid hub URL
 
         // Browser setup
         RemoteWebDriver driver = null;
