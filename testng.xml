@@ -1,0 +1,7 @@
+<suite name="AmazonSuite" parallel="methods" thread-count="3">
+  <test name="AmazonParallelBrowsers">
+    <classes>
+      <class name="com.example.tests.AmazonTest"/>
+    </classes>
+  </test>
+</suite>

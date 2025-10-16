@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="methods" name="Failed suite [AmazonSuite]">
+  <test thread-count="3" parallel="methods" name="AmazonParallelBrowsers(failed)">
+    <classes>
+      <class name="com.example.tests.AmazonTest">
+        <methods>
+          <include name="testAmazonSearch" invocation-numbers="0 1 2"/>
+        </methods>
+      </class> <!-- com.example.tests.AmazonTest -->
+    </classes>
+  </test> <!-- AmazonParallelBrowsers(failed) -->
+</suite> <!-- Failed suite [AmazonSuite] -->
